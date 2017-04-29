@@ -1,0 +1,49 @@
+<audio controls:none autoplay loop>
+  <source src="https://www.youtube.com/watch?v=pu7WuotmoRs"
+ type="audio/mpeg">
+ </audio>
+
+
+
+
+
+
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-color: black;
+			transition: background-color 7s;
+		}
+	</style>
+</head>
+<div class = "indeximage">
+<body>
+	<script type="text/javascript">
+		var colors = ["red", "orange", "yellow", "limegreen", "blue", "indigo", "violet"];
+
+		var i = 1;
+
+		window.setInterval(function(){
+			document.body.style.backgroundColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 5000);
+	</script>
+</body>
+</html>
+<body style="background-color:">
+<center><h1><font size=8><font color=blue>Welcome To Hangman!!</h1>
+<center><font size=6><font color=blue> Please enter your names.
+<center><form action="player_names" method="post">
+<center><h4><font color=blue> Player1:<input type="text" name="player1">
+<center></form>
+<center><h4><font color=blue> Player2:<input type="text" name="player2">
+</form>
+<center><font color=blue><input type="submit" value="enter">
+</form>
+
+</body>
+</div>

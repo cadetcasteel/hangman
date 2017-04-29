@@ -1,0 +1,20 @@
+<font color="gold"><center><h2><%=p2_name%> start guessing the letters. <h2></center>
+<center><h3><%=blank%></h3></center>
+<h2><center><%=message%></center></h2>
+
+<br></br>
+
+<h3><center><%=counter%></center></h3>
+
+<form method="post" action="guess">
+
+<center><input type="text" name="letter">
+
+<input type="submit" value="Enter Guess"/></center>
+
+<h2><center>guesses - <%=already_guessed%></center></h2>
+<h2><center><font color="gold"> <%=message2%></center></h2></font>
+
+<input type="hidden" name="player1" value='<%=p1_name%>'>
+<input type="hidden" name="player2" value='<%=p2_name%>'>
+</form>
