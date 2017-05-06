@@ -4,14 +4,14 @@ class Hangman
 	def initialize(password_name)
 		@name = password_name.upcase
 		@guessed = []
-		@counter = 0
+		@counter = 7
 		@correct_blank = blank
 	end
 	def make_move(letter)
 		if correct_letter?(letter)
 			correct_index(letter)
 			else
-			@counter +=1
+			@counter -=1
 		end
 	end
 
@@ -42,14 +42,14 @@ class Hangman
 		end
 	end
 	def available_guess(choice)
-		if guessed.count(choice) == 0
+		if guessed.count(choice) == 7
 			true
 		else
 			false
 		end
 	end
 	def loser
-		counter == 8
+		counter == 7
 	end
 	def winner
 		if correct_blank.include?("_")
