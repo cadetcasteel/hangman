@@ -42,7 +42,7 @@ class Hangman
 		end
 	end
 	def available_guess(choice)
-		if guessed.count(choice) == 7
+		if guessed.count(choice) == 0
 			true
 		else
 			false
