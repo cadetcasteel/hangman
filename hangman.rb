@@ -24,7 +24,7 @@ class Hangman
 	end
 
 	def correct_letter?(letter)
-		guessed.include?(letter)
+		name.include?(letter)
 	end
 	def update_guessed(letter)
 		guessed.push(letter)
@@ -49,7 +49,7 @@ class Hangman
 		end
 	end
 	def loser
-		counter == 7
+		counter == 0
 	end
 	def winner
 		if correct_blank.include?("_")

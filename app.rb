@@ -46,11 +46,11 @@ post '/guess' do
 			true
 		session[:game].update_guessed(choice)
 		session[:game].make_move(choice)
-		if session[:game].loser == "true"
+		if session[:game].loser == true
 
 		redirect '/loser?player1='+ player1 + '&player2='+ player2
 		elsif 
-		session[:game].winner == "true"
+		session[:game].winner == true
 
 		redirect '/winner?player1='+player1+'Player2'+player2
 		end  
